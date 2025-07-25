@@ -1,0 +1,194 @@
+body {
+	margin: 0;
+	font-family: 'inter', sans-serif;
+	font-size: 16px;
+	width: 100%;
+	background-image:url(C:\Users\user1\OneDrive\Pictures\Screenshots\beautiful-optical-fiber-detail.jpg)
+}
+a {
+	color:red;
+	text-decoration: none;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: red;
+	padding: 15px 15px;
+	color: white;
+}
+.navbar .brand {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.navbar .menu {
+	display: flex;
+	gap: 20px;
+}
+.navbar .menu a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
+	transition: color 0.3s;
+}
+.navbar .menu a:active {
+	color: #ffffff;
+}
+.navbar .menu a:hover {
+	font-size: 1.1rem;
+	color: #ffffff;
+}
+@media only screen and (max-width: 700px) {
+	.navbar {
+		padding: 15px 20px;
+	}
+	.navbar .menu a {
+		font-size: 0.8rem;
+	}
+	.navbar .menu a:hover {
+		font-size: 0.9rem;
+	}
+	.navbar .brand {
+		font-size: 1.2rem;
+	}
+	.navbar .menu {
+		gap: 10px;
+	}
+	.about {
+		flex-direction: column;
+	}
+}
+main {
+	margin-top: 50px;	
+}
+.about {
+	display: flex;
+	width: 65%;
+	margin: 0 auto;
+	gap: 10px;
+}
+.child {
+	flex: 1;
+	text-align: center;
+}
+.profile-card {
+	background-color: red;
+	width: 250px;
+	height: 300px;
+	overflow: hidden;
+	margin: auto;
+	position: relative;
+}
+.icon {
+	position: top;
+	background-color: red;
+	width: 250px;
+	bottom: 0;
+}
+i {
+	color: aqua;
+	padding: 8px;
+}
+.bio {
+	text-align: justify;
+	color: black;
+}
+.cv {
+	background-color: red;
+	width: 200px;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 20px;
+}
+.header {
+	border: thin solid;
+	border-color: #eee transparent;
+	margin: 60px 0;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.skill {
+	display: flex;
+	margin: 30px;
+}
+.skill-name {
+	width: 120px;
+}
+.progress-bar {
+	width: 90%;
+	height: 10px;
+	background: #eee;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: auto;
+}
+.progress {
+	background-color: red;
+	height: 100%;
+  	width: 0;
+  	border-radius: 10px;
+  	animation: fillProgress 1.5s forwards;
+}
+@keyframes fillProgress {
+	to {
+	  width: var(--progress);
+	}
+  }
+.skills-container {
+	width: 85%;
+	margin: 20px auto;
+}
+.project-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 95%;
+	margin: auto;
+	text-align: center;
+	justify-content: center;
+}
+.childs {
+	border: 2px solid red;
+	margin: 10px;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.project-info {
+	background-color:red;
+	bottom: 0;
+	position: absolute;
+	color: rgb(255, 255, 255);
+	padding: 5px;
+}
+form {
+	border-radius: 10px;
+	justify-content: center;
+	margin: auto;
+	width: 350px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.2);
+	padding: 10px;
+}
+input {
+	padding: 10px;
+	background-color: #eee;
+	border: #ddd;
+	width: 300px;
+	margin: 13px;
+	border-radius: 3px;
+	outline: none;
+	flex-direction: column;
+}
+input:focus {
+	border: thin solid blue;
+	box-shadow: 0 3px 15px rgba(0,0,0,.2);
+}
+input.submit {
+	background-color: red;
+	width: 320px;
+}
+#footer {
+	margin: 50px;
+	justify-content: center;
+	text-align: center;
+}
